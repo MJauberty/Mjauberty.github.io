@@ -20,22 +20,20 @@ Soit A un espace topologique. On dit que A est un espace de Baire s'il vérifie 
 
 **Démonstration :**
 
-On ne fait pas tout de suite de d'hypothèse sur A.
+Supposons que A soit un espace métrique complet. On peut déjà remarquer que les résultats sont triviaux si la famille d'ouverts est finie.
 
-On peut déjà remarquer que les résultats sont triviaux si la famille d'ouverts est finie.
+Soit une famille $(A_i)_{i\in I}$ dénombrable d'ouverts denses de A non-vides. Soit x un élément de A, il admet un voisinage $B_0$.
 
-Soit une famille $(A_i)_{i\in I}$ dénombrable d'ouverts denses de A non-vides.
+Désormais, on sait que $A_1$ est un dense dans A. On peut définir $\overline{B_1}(x_1,r_1)$ une boule fermée incluse $A_1\cap B_0$. On peut par ailleurs, supposer $r_1<1$ sans problème.
 
-Soit x un élément de A, il admet un voisinage $B_0$.
-
-Désormais, on sait que $A_1$ est un dense dans A. On peut définir $\overline{B_1}(x_1,r_1)$ une boule fermée incluse $A_1\cap V$.
-
-On peut par ailleurs, supposer $r_1<1$ sans problème.
-
-On peut ensuite répéter le processus, on a un voisinage $B_1$ et $A_2$ est dense dans A donc on peut définir une nouvelle boule fermée $\overline{B_2}(x_2,r_2)$.
-
-Où $r_2<\dfrac{1}{2}$ par exemple.
+On peut ensuite répéter le processus, on a un voisinage $B_1$ et $A_2$ est dense dans A donc on peut définir une nouvelle boule fermée $\overline{B_2}(x_2,r_2)$. Où $r_2<\dfrac{1}{2}$ par exemple.
 
 Par récurrence, on construit deux suites $(x_n)$ et $(r_n)$, et une famille de boules $B_n = B(x_n,r_n)$ telle que
 
-$$\forall n\in\mathbb{N},   B_{n+1}\subset B_n \textbf{}$$
+$$\forall n\in\mathbb{N},   B_{n+1}\subset B_n \textbf{    et    } r_n<\dfrac{1}{2^n}$$
+
+On peut montrer $(x_n)$ est une suite de Cauchy de notre espace A. Autrement dit, elle converge vers un certain y dans A. Mais par la construction de $(B_n)$ et $(x_n)$, on a, en outre, 
+
+$$\forall n\in \mathbb{N},  \forall p\ge n, x_p \in \overline{B_n}$$
+
+Ce qui implique que y appartient à tous les fermés $(B_n)$
