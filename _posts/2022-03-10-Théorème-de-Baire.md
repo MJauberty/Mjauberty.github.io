@@ -49,7 +49,7 @@ Supposons que A soit un espace localement compact. Autrement dit, à tout point,
 Remarquons premièrement un résultat intéressant. Soit K un compact, soit $X\subset A$ un fermé. $X\cap K$ est un compact ou est vide. Simplement, si l'intersection n'est pas vide les éléments de l'intersection sont bornés. Par intersection, on a que l'intersection est fermée. $X\cap K$ est une partie fermée, bornée dans un compact K, donc $X\cap K$ est un compact.
 
 En reprenant les notations précédentes, on peut alors définir à chaque fois, une suite de compact $(K_n)$ décroissante telle que le diamètre décroit vers 0.
-$$\delta (K_n) = min_{x,y\in K_n} d(x,y) \text{    qui existe car K_n est compact}$$
+$$\delta (K_n) = min_{x,y\in K_n} d(x,y)$$
 
 Soit x dans A, il existe un voisinage $B(x,\varepsilon)$. On définit une boule $B_0$ fermée incluse dans $A_0\cap B(x,\varepsilon)$. On peut ensuite définir le compact K voisinage de x. Et donc $K_0 = B_0\cap K$ est un compact.
 
