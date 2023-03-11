@@ -1,6 +1,5 @@
 -----------
-layout: post
-title: Théorème de Baire et applications
+Théorème de Baire et applications
 -----------
 
 Nous nous proposerons dans cet article de démontrer un théorème important de topologie.
@@ -22,7 +21,7 @@ Soit A un espace topologique. On dit que A est un espace de Baire s'il vérifie 
 
 Supposons que A soit un espace métrique complet. On peut déjà remarquer que les résultats sont triviaux si la famille d'ouverts est finie.
 
-Soit une famille $(A_i)_{i\in I}$ dénombrable d'ouverts denses de A non-vides. Soit x un élément de A, il admet un voisinage $B_0$.
+Soit une famille $(A_i)_{i\in I}$ dénombrable d'ouverts denses de A non-vides. Soit x un élément de A, il admet un voisinage $B_0 = B(x,\varepsilon)$.
 
 Désormais, on sait que $A_1$ est un dense dans A. On peut définir $\overline{B_1}(x_1,r_1)$ une boule fermée incluse $A_1\cap B_0$. On peut par ailleurs, supposer $r_1<1$ sans problème.
 
@@ -36,4 +35,13 @@ On peut montrer $(x_n)$ est une suite de Cauchy de notre espace A. Autrement dit
 
 $$\forall n\in \mathbb{N},  \forall p\ge n, x_p \in \overline{B_n}$$
 
-Ce qui implique que y appartient à tous les fermés $(B_n)$
+Ce qui implique que y appartient à tous les fermés $(\overline{B_n})$.
+
+$$y \in \bigcap_{n\in\mathbb{N}}\overline{B_n} \subset \bigcap_{n\in\mathbb{N}}A_n \subset \bigcup_{n\in\mathbb{N}}A_n$$
+
+Autrement dit, y est dans $B(x,\varepsilon)\cap \displaystyle\bigcup_{n\in\mathbb{N}}A_n$. Ce qui prouve la densité de notre ensemble.
+
+
+**Point n°1**
+
+Supposons que A soit un espace localement compact. Autrement dit, à tout point, on peut définir un voisinage compact
