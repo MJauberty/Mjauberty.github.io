@@ -53,7 +53,7 @@ $$\delta (K_n) = min_{x,y\in K_n} d(x,y) \text{    qui existe car K_n est compac
 
 Soit x dans A, il existe un voisinage $B(x,\varepsilon)$. On définit une boule $B_0$ fermée incluse dans $A_0\cap B(x,\varepsilon)$. On peut ensuite définir le compact K voisinage de x. Et donc $K_0 = B_0\cap K$ est un compact.
 
-Ensuite, il existe une boule fermée incluse dans $A_1\cap K_0$. On peut définir son rayon aussi petit qu'on souhaite, par exemple $r_1 = \dfrac{1}{2}\delta{K_0}.
+Ensuite, il existe une boule fermée incluse dans $A_1\cap K_0$. On peut définir son rayon aussi petit qu'on souhaite, par exemple $r_1 = \dfrac{1}{2}\delta{K_0}$.
 On peut poser K le voisinage compact de $x_1$. Et finalement, poser $K_1 = B_1\cap K$
 
 On imagine ensuite le processus (similaire au point 1) pour obtenir une suite de compacts $(K_n)$ imbriqués.
@@ -62,5 +62,7 @@ Mais, pour rappel, la suite $(x_n)$ obtenue est de Cauchy, donc bornée. N'oubli
 
 Conclusion y appartient à l'intersection des compacts $(K_n)$. Donc il ne s'agit pas d'un singleton vide. On obtient que $(x_n)$ ne peut avoir qu'une seule valeur d'adhérence donc $(x_n)$ converge vers y.
 
-On a que $$\bigcap_{n\in\mathbb{N}}K_n \subset \bigcap_{n\in\mathbb{N}}A_n \bigcup_{n\in\mathbb{N}}A_n$$
-A fortiori, y appartient l'union ainsi qu'au voisinage de x donc $\displaystyle\bigcap_{n\in\mathbb{N}}K_n \subset \bigcap_{n\in\mathbb{N}}A_n$$ Donc $\bigcup_{n\in\mathbb{N}}A_n$ est une partie dense de A.
+On a que $$\bigcap_{n\in\mathbb{N}}K_n \subset \bigcap_{n\in\mathbb{N}}A_n \subset \bigcup_{n\in\mathbb{N}}A_n$$
+
+A fortiori, y appartient l'union ainsi qu'au voisinage de x donc $y \in B(x,\varepsilon) \cap \bigcup_{n\in\mathbb{N}}A_n$$ 
+Donc $\bigcup_{n\in\mathbb{N}}A_n$ est une partie dense de A.
