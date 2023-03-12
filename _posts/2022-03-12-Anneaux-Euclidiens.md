@@ -83,9 +83,11 @@ $$f(r'-r) = f(r) \ge f(b)$$
 Ce qui est impossible. On montre symétriquement qu'on ne peut avoir $$r = 0$$ et $$r' = 0$$.
 
 Ne reste que le cas où $$r,r'\neq 0$$. On obtient d'après la propriété qu'on
-a ajouté : $$f(r-r')\leq \max \{f(r),f(r')\}$$
+a ajouté : 
 
-$$f(b)\leq f(r'-r) \leq f(r) \text{      et     }f(b)\leq f(r'-r) \leq f(r')$$
+$$f(r-r')\leq \max \{f(r),f(r')\}$$
+
+$$\text{Donc   }\text{    }f(b)\leq f(r'-r) \leq f(r) \text{      et     }f(b)\leq f(r'-r) \leq f(r')$$
 
 C'est encore une contradiction. Aucune issue n'est possible, notre premier hypothèse était fausse : $q = q'$. Il s'en suit que $r=r'$.
 
@@ -129,7 +131,7 @@ Très bien, désormais, prenons z un entier de Gauss, z' un élément non nul. $
 
 $$\exists z_0 \in \mathbb{Z}[i], \lvert z_0-\dfrac{z}{z'}\rvert^2 < 1$$
 
- $$\text{Donc   }\text{     }\lvert z_0z' - z \rvert^2 < 1\times \lvertz z' \rvert^2 = f(1)f(z') = f(z')$$
+ $$\text{Donc   }\text{     }\lvert z_0z' - z \rvert^2 < 1\times \lvert z z' \rvert^2 = f(1)f(z') = f(z')$$
 
 Posons $$r = z-z_0z'$$ et $$q = z_0$$. On obtient :
 
