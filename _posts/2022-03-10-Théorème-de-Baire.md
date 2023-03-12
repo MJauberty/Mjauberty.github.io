@@ -1,4 +1,5 @@
-
+---
+---
 ##_Théorème de Baire_ et applications
 
 Nous nous proposerons dans cet article de démontrer un théorème important de topologie.
