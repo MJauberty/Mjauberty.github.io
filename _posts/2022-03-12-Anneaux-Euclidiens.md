@@ -72,15 +72,17 @@ Soit a dans $$\mathcal{A}$$, et b un élément non nul. On se donne deux couples
 
 $$b(q-q') = r'-r$$
 
-Nous ne pouvons avoir $r'=r$ car b et q-q' sont non nuls (et par intégrité...).
+Nous ne pouvons avoir $$r'=r$$ car b et q-q' sont non nuls (et par intégrité...).
 
 Supposons que $q-q'\neq 0$. On a d'après (i) $$f(r'-r) = f(b(q-q'))\ge f(b)$$
 
-Si $$r' = 0$ et $r\neq 0$$.
+Si $$r' = 0$$ et $$r\neq 0$$.
 
 $$f(r'-r) = f(r) \ge f(b)$$
 
-Ce qui est impossible. On montre symétriquement qu'on ne peut avoir $$r = 0$$ et $$r' = 0$$. Ne reste que le cas où $$r,r'\neq 0$$. On obtient d'après la propriété qu'on
+Ce qui est impossible. On montre symétriquement qu'on ne peut avoir $$r = 0$$ et $$r' = 0$$.
+
+Ne reste que le cas où $$r,r'\neq 0$$. On obtient d'après la propriété qu'on
 a ajouté : $$f(r-r')\leq \max \{f(r),f(r')\}$$
 
 $$f(b)\leq f(r'-r) \leq f(r) \text{      et     }f(b)\leq f(r'-r) \leq f(r')$$
@@ -127,9 +129,10 @@ Très bien, désormais, prenons z un entier de Gauss, z' un élément non nul. $
 
 $$\exists z_0 \in \mathbb{Z}[i], \lvert z_0-\dfrac{z}{z'}\rvert^2 < 1$$
 
- $$\text{Donc   }\text{     }\lvert z_0z' - z|^2 < 1\times \rvertz'|^2 = f(1)f(z') = f(z')$$
+ $$\text{Donc   }\text{     }\lvert z_0z' - z \rvert^2 < 1\times \lvertz z' \rvert^2 = f(1)f(z') = f(z')$$
 
 Posons $$r = z-z_0z'$$ et $$q = z_0$$. On obtient :
+
 $$z = qz' + r \text{    avec    } r = 0 \text{    ou   } f(r) < f(z')$$.
 
 Conclusion ! $$\mathbb{Z}[i]$$ est un anneau euclidien, et donc un anneau principal (imaginez l'arithmétique ensuite). Et nous pouvons obtenir à moindre frais
