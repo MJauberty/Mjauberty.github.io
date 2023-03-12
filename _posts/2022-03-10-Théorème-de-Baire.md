@@ -66,9 +66,8 @@ On peut poser K le voisinage compact de $x_1$. Et finalement, poser $K_1 = B_1\c
 
 On imagine ensuite le processus (similaire au point 1) pour obtenir une suite de compacts $(K_n)$ imbriqués...
 
-$$\forall n\in\mathbb{N}, x_n\in K_n \subset K_0$$
-
-Autrement dit, $(x_n)$ est une suite dans un compact. Elle admet alors une valeur d'adhérence y. On note $x_{\varphi(n)}$ sa suite extraite. 
+$\forall n\in\mathbb{N}, x_n\in K_n \subset K_0$. Autrement dit, $(x_n)$ est une suite dans un compact.
+Elle admet alors une valeur d'adhérence y. On note $x_{\varphi(n)}$ sa suite extraite. 
 
 On sait que si $n\ge p, x_n \in K_n\subset K_p$. Donc, $\forall n\in\mathbb{N}, x_{\varphi(n + p)}\in K_p$. 
 
