@@ -25,7 +25,7 @@ $$\forall x\in I, \forall a \in\mathcal{A},\textbf{     }xa \in I$$
 
 Et I est un sous-groupe additif de $$(\mathcal{A},+)$$.
 
-L'idéal permet de généraliser, quand cela se passe bien, je vous laisse vous en convaincre avec la définition d'idéal principal.
+L'idéal permet de généraliser l'arithmétique et la notion de divisibilité, quand cela se passe bien, je vous laisse vous en convaincre avec la définition d'idéal principal.
 
 Un idéal est dit **principal** si il est de la forme $$ x\mathcal{A} = \{xa, a\in\mathcal{A}\} $$. Si vous vous rappelez de l'arithmétique de $$\mathbb{Z}$$, on a ici
 un idéal _multiple de x_. (Je laisse la preuve au lecteur)
