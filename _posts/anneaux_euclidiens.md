@@ -45,7 +45,7 @@ C'est-à-dire, 4 ou -4 (cf. remarque introduction $f(n) = |n|$).
 Concrètement, on veut s'assurer qu'un autre élément y ne puisse pas "diviser" notre élément x. Et cela ne pourrait arriver qu'à la condition où la mesure arithémtique
 de x puisse déjà être inférieur à celle de y.
 
-Reprenons notre démonstration. Il est clair que $x\mathcal{A}\sub I$ puisque x est un élément de I.
+Reprenons notre démonstration. Il est clair que $x\mathcal{A}\subset I$ puisque x est un élément de I.
 
 Soit y dans I. Utilisons la propriété (ii)
 $$\exists q,r\in\mathcal{A}, y = xq+r \text{   où   } f(r) < f(x) \text{  ou  } r = 0$$
@@ -69,14 +69,14 @@ $$b(q-q') = r'-r$$
 
 Nous ne pouvons avoir $r'=r$ car b et q-q' sont non nuls (et par intégrité...).
 
-Supposons que $q-q'\neq 0$. On a d'après (i)$$f(r'-r) = f(b(q-q'))\ge f(b)$$
+Supposons que $q-q'\neq 0$. On a d'après (i) $$f(r'-r) = f(b(q-q'))\ge f(b)$$
 
 Si $r' = 0$ et $r\neq 0$.
 
 $$f(r'-r) = f(r) \ge f(b)$$
 
 Ce qui est impossible. On montre symétriquement qu'on ne peut avoir $r = 0$ et $r' = 0$. Ne reste que le cas où $r,r'\neq 0$. On obtient d'après la propriété qu'on
-a ajouté :$$f(r-r')\leq \max \{f(r),f(r')\}$$
+a ajouté : $$f(r-r')\leq \max \{f(r),f(r')\}$$
 
 $$f(b)\leq f(r'-r) \leq f(r) \text{      et     }f(b)\leq f(r'-r) \leq f(r')$$
 
@@ -84,7 +84,7 @@ C'est encore une contradiction. Aucune issue n'est possible, notre premier hypot
 
 #### Condition d'inversibilité dans un anneau euclidien.
 
-On pose directement $\alpha = f(1)$. Soit x un élément inversible de $\mathcal{A}.
+On pose directement $\alpha = f(1)$. Soit x un élément inversible de $\mathcal{A}$.
 
 On peut déjà remarquer avec la propriété (i) $$\forall x\in \mathcal{A}^*, f(x\times 1)\ge f(1) = \alpha$$
 
@@ -105,9 +105,9 @@ $$\mathbb{Z}[i] := \{a + ib ; a,b\in\mathbb{Z}\}$$
 
 Je vous laisse démontrer qu'il s'agit bien d'un anneau intègre commutatif unitaire.
 
-Posons $\forall z\in\mathbb{Z}[i]^*, f(z) = |z|^2 \in\mathbb{N}$. On a déjà la première propriété vérifiée.
+Posons $\forall z\in\mathbb{Z}[i]^*, \text{    }f(z) = |z|^2 \in\mathbb{N}$. On a déjà la première propriété vérifiée.
 
-$$(i)\forall z,z'\in\mathbb{Z}[i]^* f(zz') = f(z)f(z') \ge f(z')$$
+$$(i)\forall z,z'\in\mathbb{Z}[i]^*, \text{    }f(zz') = f(z)f(z') \ge f(z')$$
 
 La deuxième est un peu plus subtile. Pour $x$ un réel, on note $[x]$ le reste décimal le plus petit en valeur absolue. 
 
@@ -122,7 +122,7 @@ Très bien, désormais, prenons z un entier de Gauss, z' un élément non nul. $
 
 $$\exists z_0 \in \mathbb{Z}[i], \left|z_0-\dfrac{z}{z'}\right|^2 < 1$$
 
-Donc $|z_0z' - z|^2 < 1\times |z'|^2 = f(1)f(z') = f(z')$
+ $$\text{Donc   }\text{     }|z_0z' - z|^2 < 1\times |z'|^2 = f(1)f(z') = f(z')$$
 
 Posons $r = z-z_0z'$ et $q = z_0$. On obtient :
 $$z = qz' + r \text{    avec    } r = 0 \text{    ou   } f(r) < f(z')$$.
