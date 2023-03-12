@@ -72,9 +72,9 @@ Soit a dans $$\mathcal{A}$$, et b un élément non nul. On se donne deux couples
 
 $$b(q-q') = r'-r$$
 
-Nous ne pouvons avoir $$r'=r$$ car b et q-q' sont non nuls (et par intégrité...).
+Supposons que $$q-q'\neq 0$$. On a d'après (i) $$f(r'-r) = f(b(q-q'))\ge f(b)$$
 
-Supposons que $q-q'\neq 0$. On a d'après (i) $$f(r'-r) = f(b(q-q'))\ge f(b)$$
+Nous ne pouvons avoir $$r'=r$$ car b et q-q' sont non nuls (et par intégrité...).
 
 Si $$r' = 0$$ et $$r\neq 0$$.
 
