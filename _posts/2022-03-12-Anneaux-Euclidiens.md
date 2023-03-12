@@ -2,17 +2,17 @@
 ---
 ### Anneaux euclidiens
 
-Soit $(\mathcal{A},+,\times)$ un anneau intègre unitaire commutatif. $(\mathcal{A},f)$ est dit "euclidien" si f est une application $\mathcal{A}^* \longrightarrow \mathbb{N}$ 
+Soit $ (\mathcal{A},+,\times) $ un anneau intègre unitaire commutatif. $ (\mathcal{A},f) $ est dit "euclidien" si f est une application $ \mathcal{A}^* \longrightarrow \mathbb{N} $ 
 qui vérifie les propriétés suivantes.
 
-(i) $\forall x,y\in\mathcal{A}^*, \textbf{     }f(xy)\ge f(y)$
+(i) $ \forall x,y\in\mathcal{A}^*, \textbf{     }f(xy)\ge f(y) $
 
-(ii) $\forall a \in\mathcal{A}, \forall b\in\mathcal{A}^*, \exists q,r\in\mathcal{A}, a = bq+r \text{   où   } f(r) < f(b) \text{  ou  } r = 0$
+(ii) $ \forall a \in\mathcal{A}, \forall b\in\mathcal{A}^*, \exists q,r\in\mathcal{A}, a = bq+r \text{   où   } f(r) < f(b) \text{  ou  } r = 0 $
 
 Pour être plus clair, c'est un anneaux dans lequel on peut faire plus ou moins une sorte de division euclidienne. Mais attention, nous n'avons, a priori, pas unicité
 du couple (q,r).
 
-Remarque : $f : n \mapsto |n|$ dans $\mathbb{Z}$ ou $f: P\mapsto deg(P)$ sont des applications qui vérifient ces propriétés.
+Remarque : $ f : n \mapsto |n| $ dans $ \mathbb{Z} $ ou $ f: P\mapsto deg(P) $ sont des applications qui vérifient ces propriétés.
 
 f est appelé un stathme.
 
@@ -26,7 +26,7 @@ Et I est un sous-groupe additif de $(\mathcal{A},+).
 
 L'idéal permet de généraliser, quand cela se passe bien, je vous laisse vous en convaincre avec la définition d'idéal principal.
 
-Un idéal est dit **principal** si il est de la forme $x\mathcal{A} = \{xa, a\in\mathcal{A}\}$. Si vous vous rappelez de l'arithmétique de $\mathbb{Z}$, on a ici
+Un idéal est dit **principal** si il est de la forme $ x\mathcal{A} = \{xa, a\in\mathcal{A}\} $. Si vous vous rappelez de l'arithmétique de $\mathbb{Z}$, on a ici
 un idéal _multiple de x_. (Je laisse la preuve au lecteur)
 
 Simplement, on dit qu'un anneau est principal si tous ses idéaux sont principaux. Autrement dit... on sent que faire de l'arithmétique dedans, cela plus aisé.
