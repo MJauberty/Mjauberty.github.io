@@ -19,6 +19,8 @@ Soit A un espace topologique. On dit que A est un espace de Baire s'il vérifie 
 
 **Démonstration :**
 
+**Point n°2**
+
 Supposons que A soit un espace métrique complet. On peut déjà remarquer que les résultats sont triviaux si la famille d'ouverts est finie.
 
 Soit une famille $(A_i)_{i\in I}$ dénombrable d'ouverts denses de A non-vides. Soit x un élément de A, il admet un voisinage $B_0 = B(x,\varepsilon)$.
@@ -46,7 +48,9 @@ Autrement dit, y est dans $B(x,\varepsilon)\cap \displaystyle\bigcup_{n\in\mathb
 
 Supposons que A soit un espace localement compact. Autrement dit, à tout point, on peut définir un voisinage compact. 
 
-Remarquons premièrement un résultat intéressant. Soit K un compact, soit $X\subset A$ un fermé. $X\cap K$ est un compact ou est vide. Simplement, si l'intersection n'est pas vide les éléments de l'intersection sont bornés. Par intersection, on a que l'intersection est fermée. $X\cap K$ est une partie fermée, bornée dans un compact K, donc $X\cap K$ est un compact.
+Remarquons premièrement un résultat intéressant. Soit K un compact, soit $X\subset A$ un fermé. $X\cap K$ est un compact ou est vide. 
+
+Simplement, si l'intersection n'est pas vide les éléments de l'intersection sont bornés. Par intersection, on a que l'intersection est fermée. $X\cap K$ est une partie fermée, bornée dans un compact K, donc $X\cap K$ est un compact.
 
 En reprenant les notations précédentes, on peut alors définir à chaque fois, une suite de compact $(K_n)$ décroissante telle que le diamètre décroit vers 0.
 $$\delta (K_n) = min_{x,y\in K_n} d(x,y)$$
@@ -56,13 +60,32 @@ Soit x dans A, il existe un voisinage $B(x,\varepsilon)$. On définit une boule 
 Ensuite, il existe une boule fermée incluse dans $A_1\cap K_0$. On peut définir son rayon aussi petit qu'on souhaite, par exemple $r_1 = \dfrac{1}{2}\delta{K_0}$.
 On peut poser K le voisinage compact de $x_1$. Et finalement, poser $K_1 = B_1\cap K$
 
-On imagine ensuite le processus (similaire au point 1) pour obtenir une suite de compacts $(K_n)$ imbriqués.
+On imagine ensuite le processus (similaire au point 1) pour obtenir une suite de compacts $(K_n)$ imbriqués...
 
-Mais, pour rappel, la suite $(x_n)$ obtenue est de Cauchy, donc bornée. N'oublions pas qu'elle est également dans un compact, donc elle admet une valeur d'adhérence y qui appartient à $K_0$. On note $x_{\varphi(n)}$ sa suite extraite. On sait que si $n\ge p, x_n \in K_p$. Donc, $\forall n\in\mathbb{N}, x_{\varphi(n + p)}\in K_p. Donc $x_{\varphi(n + p)}$ tend vers y (c'est une suite extraite de $x_{\varphi(n)}$ et est dans le compact $K_p$ donc y est dans $K_p$.
+$$\forall n\in\mathbb{N}, x_n\in K_n \subset K_0$$
 
-Conclusion y appartient à l'intersection des compacts $(K_n)$. Donc il ne s'agit pas d'un singleton vide. On obtient que $(x_n)$ ne peut avoir qu'une seule valeur d'adhérence donc $(x_n)$ converge vers y.
+Autrement dit, $(x_n)$ est une suite dans un compact. Elle admet alors une valeur d'adhérence y. On note $x_{\varphi(n)}$ sa suite extraite. 
+
+On sait que si $n\ge p, x_n \in K_n\subset K_p$. Donc, $\forall n\in\mathbb{N}, x_{\varphi(n + p)}\in K_p$. 
+
+Or $x_{\varphi(n + p)}$ tend vers y (c'est une suite extraite de $x_{\varphi(n)}$ et est dans le compact $K_p$ donc y est dans $K_p$.
 
 On a que $$\bigcap_{n\in\mathbb{N}}K_n \subset \bigcap_{n\in\mathbb{N}}A_n \subset \bigcup_{n\in\mathbb{N}}A_n$$
 
 A fortiori, y appartient l'union ainsi qu'au voisinage de x donc $y \in B(x,\varepsilon) \cap \bigcup_{n\in\mathbb{N}}A_n$$ 
 Donc $\bigcup_{n\in\mathbb{N}}A_n$ est une partie dense de A.
+
+**Point n°3**
+Soit A un espace de Baire. Soit un X ouvert de A. Montrons que X est un espace de baire pour la topologie induite sur X.
+
+Soit $(X_n)_n$ des ouverts de X denses dans X. On peut poser $A_i$ une partie dense de A telle que $X_i = A_i\cap X$. 
+
+Explicitement, on pose $O_i = A\setminus \overline{X_i}$.
+On pose $A_i = O_i \cup X_i$. On obtient bien une partie ouverte dans A, la densité étant assez triviale.
+
+On a alors
+$$\bigcup_{n}X_n = \bigcup_{n}A_n\cap X = X\cap\bigcup_{n}A_n$$
+
+D'après notre hypothèse, A est de Baire donc $\displaystyle\bigcup_{n}A_n$ est une partie dense de A. Et donc, cela permet de définir une partie dense dans X.
+
+
