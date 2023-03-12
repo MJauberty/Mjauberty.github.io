@@ -1,13 +1,16 @@
------------
-Théorème de Baire et applications
------------
+
+##**Théorème de Baire et applications
 
 Nous nous proposerons dans cet article de démontrer un théorème important de topologie.
 
 Soit A un espace topologique. On dit que A est un espace de Baire s'il vérifie la propriété suivante :
 
-          Toute réunion au plus dénombrable de d'ouverts denses dans A est dense dans A
- 
+          Toute intersection au plus dénombrable d'ouverts denses dans A est dense dans A
+          
+On peut aussi le définir par une propriété équivalente (qu'on laissera le soin de la démonstration au lecteur)
+
+          Tout réunion au plus dénombrable de fermés d'intérieur vide dans A est d'intérieur vide
+          
 **Le théorème de Baire** donne des conditions suffisantes pour qu'un espace topologique soit de Baire :
 
          1) Si A est localement compact, alors A est de Baire.
@@ -17,9 +20,9 @@ Soit A un espace topologique. On dit que A est un espace de Baire s'il vérifie 
          3) Si X est un ouvert d'un espace de Baire A, alors X est de Baire pour la topologie induite.
 
 
-**Démonstration :**
+####**Démonstration :**
 
-**Point n°2**
+#####**Point n°2**
 
 Supposons que A soit un espace métrique complet. On peut déjà remarquer que les résultats sont triviaux si la famille d'ouverts est finie.
 
@@ -39,12 +42,12 @@ $$\forall n\in \mathbb{N},  \forall p\ge n, x_p \in \overline{B_n}$$
 
 Ce qui implique que y appartient à tous les fermés $(\overline{B_n})$.
 
-$$y \in \bigcap_{n\in\mathbb{N}}\overline{B_n} \subset \bigcap_{n\in\mathbb{N}}A_n \subset \bigcup_{n\in\mathbb{N}}A_n$$
+$$y \in \bigcap_{n\in\mathbb{N}}\overline{B_n} \subset \bigcap_{n\in\mathbb{N}}A_n$$
 
-Autrement dit, y est dans $B(x,\varepsilon)\cap \displaystyle\bigcup_{n\in\mathbb{N}}A_n$. Ce qui prouve la densité de notre ensemble.
+Autrement dit, y est dans $B(x,\varepsilon)\cap \displaystyle\bigcap_{n\in\mathbb{N}}A_n$. Ce qui prouve la densité de notre ensemble.
 
 
-**Point n°1**
+#####**Point n°1**
 
 Supposons que A soit un espace localement compact. Autrement dit, à tout point, on peut définir un voisinage compact. 
 
@@ -70,12 +73,13 @@ On sait que si $n\ge p, x_n \in K_n\subset K_p$. Donc, $\forall n\in\mathbb{N}, 
 
 Or $x_{\varphi(n + p)}$ tend vers y (c'est une suite extraite de $x_{\varphi(n)}$ et est dans le compact $K_p$ donc y est dans $K_p$.
 
-On a que $$\bigcap_{n\in\mathbb{N}}K_n \subset \bigcap_{n\in\mathbb{N}}A_n \subset \bigcup_{n\in\mathbb{N}}A_n$$
+On a que $$\bigcap_{n\in\mathbb{N}}K_n \subset \bigcap_{n\in\mathbb{N}}A_n$$
 
-A fortiori, y appartient l'union ainsi qu'au voisinage de x donc $y \in B(x,\varepsilon) \cap \bigcup_{n\in\mathbb{N}}A_n$$ 
-Donc $\bigcup_{n\in\mathbb{N}}A_n$ est une partie dense de A.
+A fortiori, y appartient l'union ainsi qu'au voisinage de x donc $y \in B(x,\varepsilon) \cap \bigcap_{n\in\mathbb{N}}A_n$$ 
+Donc $\bigcap_{n\in\mathbb{N}}A_n$ est une partie dense de A.
 
-**Point n°3**
+
+#####**Point n°3**
 Soit A un espace de Baire. Soit un X ouvert de A. Montrons que X est un espace de baire pour la topologie induite sur X.
 
 Soit $(X_n)_n$ des ouverts de X denses dans X. On peut poser $A_i$ une partie dense de A telle que $X_i = A_i\cap X$. 
@@ -84,8 +88,28 @@ Explicitement, on pose $O_i = A\setminus \overline{X_i}$.
 On pose $A_i = O_i \cup X_i$. On obtient bien une partie ouverte dans A, la densité étant assez triviale.
 
 On a alors
-$$\bigcup_{n}X_n = \bigcup_{n}A_n\cap X = X\cap\bigcup_{n}A_n$$
+$$\bigcap_{n}X_n = \bigcap_{n}A_n\cap X = X\cap\bigcap_{n}A_n$$
 
-D'après notre hypothèse, A est de Baire donc $\displaystyle\bigcup_{n}A_n$ est une partie dense de A. Et donc, cela permet de définir une partie dense dans X.
+D'après notre hypothèse, A est de Baire donc $\displaystyle\bigcap_{n}A_n$ est une partie dense de A. Et donc, cela permet de définir une partie dense dans X.
 
 
+####**Applications diverses**
+
+#####**Un espace vectoriel normé complet de dimension infinie n'admet pas de base dénombrable**
+
+Posons $(E,||.||)$ un espace vectoriel normé complet de dimension infinie. On dit que $(e_n)_{n\in\mathbb{N}}$ est une base de E si et seulement si, il existe pour chaque x dans E une partie **finie** de $\mathbb{N}$ I telle que :
+$$\exists ! (\lambda_i)_{i\in I}, x = \sum_{i\in I}\lambda_i e_i$$
+
+Supposons qu'il en existe une base $(e_n)$ pour notre espace E. Il est de fait métrique complet, et donc de Baire d'après le théorème qu'on a vu.
+
+On note $F_N = vect(e_0,...,e_N)$. Les $(F_N)$ sont des sous-espaces stricts de E. Or, un sev strict est d'intérieur vide. Ils sont, par ailleurs, de dimensions finies donc fermés.
+
+On remarque que notre espace est alors la réunion de ces fermés.
+$$E = \bigcup_{N\in\mathbb{N}}F_N$$
+
+En effet, si x est dans E. Il existe une partie J de $\mathbb{N}$ qui permet d'exprimer x en combinaison linéaire. On pose $N = max(J)$. Et on remarque que x est dans $F_N$.
+L'autre inclusion est évidente.
+
+On montre alors E est également d'intérieur vide (cf. propriété équivalente d'un espace de Baire) car E est de Baire. On voit directement la contradiction. L'intérieur de E dans E est... E, qui n'est pas vide.
+
+Par l'absurde, notre base non-dénombrable.
