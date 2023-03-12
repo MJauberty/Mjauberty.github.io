@@ -1,5 +1,5 @@
 
-##**Théorème de Baire et applications
+##_Théorème de Baire_ et applications
 
 Nous nous proposerons dans cet article de démontrer un théorème important de topologie.
 
@@ -20,9 +20,9 @@ On peut aussi le définir par une propriété équivalente (qu'on laissera le so
          3) Si X est un ouvert d'un espace de Baire A, alors X est de Baire pour la topologie induite.
 
 
-####**Démonstration :**
+####Démonstration :
 
-#####**Point n°2**
+#####Point n°2
 
 Supposons que A soit un espace métrique complet. On peut déjà remarquer que les résultats sont triviaux si la famille d'ouverts est finie.
 
@@ -47,7 +47,7 @@ $$y \in \bigcap_{n\in\mathbb{N}}\overline{B_n} \subset \bigcap_{n\in\mathbb{N}}A
 Autrement dit, y est dans $B(x,\varepsilon)\cap \displaystyle\bigcap_{n\in\mathbb{N}}A_n$. Ce qui prouve la densité de notre ensemble.
 
 
-#####**Point n°1**
+#####Point n°1
 
 Supposons que A soit un espace localement compact. Autrement dit, à tout point, on peut définir un voisinage compact. 
 
@@ -79,7 +79,7 @@ A fortiori, y appartient l'union ainsi qu'au voisinage de x donc $y \in B(x,\var
 Donc $\bigcap_{n\in\mathbb{N}}A_n$ est une partie dense de A.
 
 
-#####**Point n°3**
+#####Point n°3
 Soit A un espace de Baire. Soit un X ouvert de A. Montrons que X est un espace de baire pour la topologie induite sur X.
 
 Soit $(X_n)_n$ des ouverts de X denses dans X. On peut poser $A_i$ une partie dense de A telle que $X_i = A_i\cap X$. 
@@ -93,9 +93,9 @@ $$\bigcap_{n}X_n = \bigcap_{n}A_n\cap X = X\cap\bigcap_{n}A_n$$
 D'après notre hypothèse, A est de Baire donc $\displaystyle\bigcap_{n}A_n$ est une partie dense de A. Et donc, cela permet de définir une partie dense dans X.
 
 
-####**Applications diverses**
+####Applications diverses
 
-#####**Un espace vectoriel normé complet de dimension infinie n'admet pas de base dénombrable**
+#####Un espace vectoriel normé complet de dimension infinie n'admet pas de base dénombrable
 
 Posons $(E,||.||)$ un espace vectoriel normé complet de dimension infinie. On dit que $(e_n)_{n\in\mathbb{N}}$ est une base de E si et seulement si, il existe pour chaque x dans E une partie **finie** de $\mathbb{N}$ I telle que :
 $$\exists ! (\lambda_i)_{i\in I}, x = \sum_{i\in I}\lambda_i e_i$$
@@ -112,4 +112,4 @@ L'autre inclusion est évidente.
 
 On montre alors E est également d'intérieur vide (cf. propriété équivalente d'un espace de Baire) car E est de Baire. On voit directement la contradiction. L'intérieur de E dans E est... E, qui n'est pas vide.
 
-Par l'absurde, notre base non-dénombrable.
+Par l'absurde, notre base est non-dénombrable.
