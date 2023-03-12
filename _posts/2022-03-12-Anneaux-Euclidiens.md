@@ -9,7 +9,7 @@ qui vérifie les propriétés suivantes.
 
 (ii) $$ \forall a \in\mathcal{A}, \forall b\in\mathcal{A}^*, \exists q,r\in\mathcal{A}, a = bq+r \text{   où   } f(r) < f(b) \text{  ou  } r = 0 $$
 
-Pour être plus clair, c'est un anneaux dans lequel on peut faire plus ou moins une sorte de division euclidienne. Mais attention, nous n'avons, a priori, pas unicité
+Pour être plus clair, c'est un anneau dans lequel on peut faire plus ou moins une sorte de division euclidienne. Mais attention, nous n'avons, a priori, pas unicité
 du couple (q,r).
 
 Remarque : $$ f : n \mapsto \lvert n\rvert $$ dans $$ \mathbb{Z} $$ ou $$ f: P\mapsto deg(P) $$ sont des applications qui vérifient ces propriétés.
@@ -22,6 +22,7 @@ Pour être certain de savoir de quoi nous parlons, rappelons la définition d'un
 
 I est un idéal de A signifie que 
 $$\forall x\in I, \forall a \in\mathcal{A},\textbf{     }xa \in I$$
+
 Et I est un sous-groupe additif de $$(\mathcal{A},+)$$.
 
 L'idéal permet de généraliser, quand cela se passe bien, je vous laisse vous en convaincre avec la définition d'idéal principal.
@@ -29,7 +30,7 @@ L'idéal permet de généraliser, quand cela se passe bien, je vous laisse vous 
 Un idéal est dit **principal** si il est de la forme $$ x\mathcal{A} = \{xa, a\in\mathcal{A}\} $$. Si vous vous rappelez de l'arithmétique de $$\mathbb{Z}$$, on a ici
 un idéal _multiple de x_. (Je laisse la preuve au lecteur)
 
-Simplement, on dit qu'un anneau est principal si tous ses idéaux sont principaux. Autrement dit... on sent que faire de l'arithmétique dedans, cela plus aisé.
+Simplement, on dit qu'un anneau est principal si tous ses idéaux sont principaux. Autrement dit... on sent que faire de l'arithmétique dedans sera plus aisé.
 
 #### Tout anneau euclidien est un anneau principal
 
@@ -42,8 +43,8 @@ Pour expliquer ce choix étrange, on peut voir f comme une mesure arithmétique.
 Dans $$\mathbb{Z}$$ par exemple, pour déterminer l'ensemble des multiples de n, on prend comme générateur l'élément qui a la plus petite mesure arithmétique.
 C'est-à-dire, 4 ou -4 (cf. remarque introduction $$f(n) = \lvert n \rvert$$).
 
-Concrètement, on veut s'assurer qu'un autre élément y ne puisse pas "diviser" notre élément x. Et cela ne pourrait arriver qu'à la condition où la mesure arithémtique
-de x puisse déjà être inférieur à celle de y.
+Concrètement, on veut s'assurer qu'un autre élément y ne puisse pas "diviser" notre élément x. Et cela ne pourrait arriver qu'à la condition où la mesure arithmétique
+de x puisse déjà être inférieure à celle de y.
 
 Reprenons notre démonstration. Il est clair que $$x\mathcal{A}\subset I$$ puisque x est un élément de I.
 
