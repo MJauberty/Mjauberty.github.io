@@ -27,9 +27,9 @@ On peut aussi le définir par une propriété équivalente (qu'on laissera le so
 
 Supposons que A soit un espace métrique complet. On peut déjà remarquer que les résultats sont triviaux si la famille d'ouverts est finie.
 
-Soit une famille $(A_i)_{i\in I}$$$ dénombrable d'ouverts denses de A non-vides. Soit x un élément de A, il admet un voisinage $B_0 = B(x,\varepsilon)$$$.
+Soit une famille $$(A_i)_{i\in I}$$ dénombrable d'ouverts denses de A non-vides. Soit x un élément de A, il admet un voisinage $$B_0 = B(x,\varepsilon)$$.
 
-Désormais, on sait que $A_1$$$ est un dense dans A. On peut définir $\overline{B_1}(x_1,r_1)$ une boule fermée incluse $A_1\cap B_0$$$. On peut par ailleurs, supposer $r_1<1$$$ sans problème.
+Désormais, on sait que $$A_1$$ est un dense dans A. On peut définir $$\overline{B_1}(x_1,r_1)$$ une boule fermée incluse $$A_1\cap B_0$$. On peut par ailleurs, supposer $r_1<1$$$ sans problème.
 
 On peut ensuite répéter le processus, on a un voisinage $B_1$$$ et $A_2$$$ est dense dans A donc on peut définir une nouvelle boule fermée $\overline{B_2}(x_2,r_2)$. Où $r_2<\dfrac{1}{2}$$$ par exemple.
 
