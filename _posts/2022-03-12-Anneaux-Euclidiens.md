@@ -12,7 +12,7 @@ qui vérifie les propriétés suivantes.
 Pour être plus clair, c'est un anneaux dans lequel on peut faire plus ou moins une sorte de division euclidienne. Mais attention, nous n'avons, a priori, pas unicité
 du couple (q,r).
 
-Remarque : $$ f : n \mapsto |n| $$ dans $$ \mathbb{Z} $$ ou $$ f: P\mapsto deg(P) $$ sont des applications qui vérifient ces propriétés.
+Remarque : $$ f : n \mapsto \lvert n\rvert $$ dans $$ \mathbb{Z} $$ ou $$ f: P\mapsto deg(P) $$ sont des applications qui vérifient ces propriétés.
 
 f est appelé un stathme.
 
@@ -40,7 +40,7 @@ Je vais poser x l'élément qui minimise f restreinte à $$I^*$$. Cet élément 
 Pour expliquer ce choix étrange, on peut voir f comme une mesure arithmétique. Or, nous avons vu que arithmétique et idéaux sont assez proches.
 
 Dans $$\mathbb{Z}$$ par exemple, pour déterminer l'ensemble des multiples de n, on prend comme générateur l'élément qui a la plus petite mesure arithmétique.
-C'est-à-dire, 4 ou -4 (cf. remarque introduction $$f(n) = |n|$$).
+C'est-à-dire, 4 ou -4 (cf. remarque introduction $$f(n) = \lvert n \rvert$$).
 
 Concrètement, on veut s'assurer qu'un autre élément y ne puisse pas "diviser" notre élément x. Et cela ne pourrait arriver qu'à la condition où la mesure arithémtique
 de x puisse déjà être inférieur à celle de y.
@@ -105,24 +105,24 @@ $$\mathbb{Z}[i] := \{a + ib ; a,b\in\mathbb{Z}\}$$
 
 Je vous laisse démontrer qu'il s'agit bien d'un anneau intègre commutatif unitaire.
 
-Posons $$\forall z\in\mathbb{Z}[i]^*, \text{    }f(z) = |z|^2 \in\mathbb{N}$$. On a déjà la première propriété vérifiée.
+Posons $$\forall z\in\mathbb{Z}[i]^*, \text{    }f(z) = \lvert z\rvert^2 \in\mathbb{N}$$. On a déjà la première propriété vérifiée.
 
 $$(i)\forall z,z'\in\mathbb{Z}[i]^*, \text{    }f(zz') = f(z)f(z') \ge f(z')$$
 
 La deuxième est un peu plus subtile. Pour $$x$$ un réel, on note $$[x]$$ le reste décimal le plus petit en valeur absolue. 
 
-Explicitement, $$[x] = \lfloor x \rfloor$$ si $$|x-\lfloor x \rfloor|\leq \dfrac{1}{2}$$ et $$[x] = \lceil x \rceil$$ si $$|x-\lceil x \rceil| < \dfrac{1}{2}$$.
+Explicitement, $$[x] = \lfloor x \rfloor$$ si $$\lvert x-\lfloor x \rfloor \rvert\leq \dfrac{1}{2}$$ et $$[x] = \lceil x \rceil$$ si $$\lvert x-\lceil x \rceil\rvert < \dfrac{1}{2}$$.
 
 Fastidieux à écrire mais terriblement simple à voir sur un dessin, cette application est bien définie. Autrement dit, on peut toujours définir un entier $$x_0$$
-tel que $$|x - x_0| \leq \dfrac{1}{2}$$.
+tel que $$\lvert x - x_0 \rvert \leq \dfrac{1}{2}$$.
 
-Soit $$z\in\mathbb{C}$$, on peut définir $$z_0 \in \mathbb{Z}[i]$$ tel que $$|z-z_0|^2 < 1$$. On pose simplement $$z_0 = [\Re (z)] + i [\Im (z)]$$
+Soit $$z\in\mathbb{C}$$, on peut définir $$z_0 \in \mathbb{Z}[i]$$ tel que $$\lvert z-z_0\rvert^2 < 1$$. On pose simplement $$z_0 = [\Re (z)] + i [\Im (z)]$$
 
 Très bien, désormais, prenons z un entier de Gauss, z' un élément non nul. $$\dfrac{z}{z'}\in\mathbb{C}$$.
 
-$$\exists z_0 \in \mathbb{Z}[i], \left|z_0-\dfrac{z}{z'}\right|^2 < 1$$
+$$\exists z_0 \in \mathbb{Z}[i], \lvert z_0-\dfrac{z}{z'}\rvert^2 < 1$$
 
- $$\text{Donc   }\text{     }|z_0z' - z|^2 < 1\times |z'|^2 = f(1)f(z') = f(z')$$
+ $$\text{Donc   }\text{     }\lvert z_0z' - z|^2 < 1\times \rvertz'|^2 = f(1)f(z') = f(z')$$
 
 Posons $$r = z-z_0z'$$ et $$q = z_0$$. On obtient :
 $$z = qz' + r \text{    avec    } r = 0 \text{    ou   } f(r) < f(z')$$.
