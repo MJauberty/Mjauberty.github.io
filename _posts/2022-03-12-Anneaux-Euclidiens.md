@@ -48,6 +48,7 @@ de x puisse déjà être inférieur à celle de y.
 Reprenons notre démonstration. Il est clair que $$x\mathcal{A}\subset I$$ puisque x est un élément de I.
 
 Soit y dans I. Utilisons la propriété (ii)
+
 $$\exists q,r\in\mathcal{A}, y = xq+r \text{   où   } f(r) < f(x) \text{  ou  } r = 0$$
 
 Or, si $$r\neq 0$$, alors $$f(r) < f(x)$$ et $$r = y - xq \in I$$. Donc $$r\in I^*$$. Cela contredit la définition de x.
@@ -61,7 +62,11 @@ Mais surtout, l'existence d'une mesure arithmétique permet à elle-seule de dé
 
 #### Condition d'unicité de (q,r)
 
-Si nous ajoutons une troisième propriété à notre application f : $$\forall x,y \in\mathcal{A}^*, f(x-y)\leq \max \{f(x),f(y)\}$$. Nous pouvons montrer l'unicité du
+Si nous ajoutons une troisième propriété à notre application f : 
+
+$$\forall x,y \in\mathcal{A}^*, f(x-y)\leq \max \{f(x),f(y)\}$$. 
+
+Nous pouvons montrer l'unicité du
 couple (q,r).
 Soit a dans $$\mathcal{A}$$, et b un élément non nul. On se donne deux couples (q,r) et (q',r') qui vérifient les propriétés de (ii).
 
@@ -75,7 +80,7 @@ Si $$r' = 0$ et $r\neq 0$$.
 
 $$f(r'-r) = f(r) \ge f(b)$$
 
-Ce qui est impossible. On montre symétriquement qu'on ne peut avoir $r = 0$ et $r' = 0$. Ne reste que le cas où $$r,r'\neq 0$$. On obtient d'après la propriété qu'on
+Ce qui est impossible. On montre symétriquement qu'on ne peut avoir $$r = 0$$ et $$r' = 0$$. Ne reste que le cas où $$r,r'\neq 0$$. On obtient d'après la propriété qu'on
 a ajouté : $$f(r-r')\leq \max \{f(r),f(r')\}$$
 
 $$f(b)\leq f(r'-r) \leq f(r) \text{      et     }f(b)\leq f(r'-r) \leq f(r')$$
