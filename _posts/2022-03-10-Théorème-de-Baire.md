@@ -29,85 +29,85 @@ Supposons que A soit un espace métrique complet. On peut déjà remarquer que l
 
 Soit une famille $$(A_i)_{i\in I}$$ dénombrable d'ouverts denses de A non-vides. Soit x un élément de A, il admet un voisinage $$B_0 = B(x,\varepsilon)$$.
 
-Désormais, on sait que $$A_1$$ est un dense dans A. On peut définir $$\overline{B_1}(x_1,r_1)$$ une boule fermée incluse $$A_1\cap B_0$$. On peut par ailleurs, supposer $r_1<1$$$ sans problème.
+Désormais, on sait que $$A_1$$ est un dense dans A. On peut définir $$\overline{B_1}(x_1,r_1)$$ une boule fermée incluse $$A_1\cap B_0$$. On peut par ailleurs, supposer $$r_1<1$$ sans problème.
 
-On peut ensuite répéter le processus, on a un voisinage $B_1$$$ et $A_2$$$ est dense dans A donc on peut définir une nouvelle boule fermée $\overline{B_2}(x_2,r_2)$. Où $r_2<\dfrac{1}{2}$$$ par exemple.
+On peut ensuite répéter le processus, on a un voisinage $$B_1$$ et $$A_2$$ est dense dans A donc on peut définir une nouvelle boule fermée $$\overline{B_2}(x_2,r_2)$$. Où $$r_2<\dfrac{1}{2}$$ par exemple.
 
-Par récurrence, on construit deux suites $(x_n)$$$ et $(r_n)$$$, et une famille de boules $B_n = B(x_n,r_n)$$$ telle que
+Par récurrence, on construit deux suites $$(x_n)$$ et $$(r_n)$$, et une famille de boules $$B_n = B(x_n,r_n)$$ telle que
 
 $$\forall n\in\mathbb{N},   B_{n+1}\subset B_n \textbf{    et    } r_n<\dfrac{1}{2^n}$$
 
-On peut montrer $(x_n)$$$ est une suite de Cauchy de notre espace A. Autrement dit, elle converge vers un certain y dans A. Mais par la construction de $(B_n)$$$ et $(x_n)$$$, on a, en outre, 
+On peut montrer $$(x_n)$$ est une suite de Cauchy de notre espace A. Autrement dit, elle converge vers un certain y dans A. Mais par la construction de $$(B_n)$$ et $$(x_n)$$, on a, en outre, 
 
 $$\forall n\in \mathbb{N},  \forall p\ge n, x_p \in \overline{B_n}$$
 
-Ce qui implique que y appartient à tous les fermés $(\overline{B_n})$$$.
+Ce qui implique que y appartient à tous les fermés $$(\overline{B_n})$$.
 
 $$y \in \bigcap_{n\in\mathbb{N}}\overline{B_n} \subset \bigcap_{n\in\mathbb{N}}A_n$$
 
-Autrement dit, y est dans $B(x,\varepsilon)\cap \displaystyle\bigcap_{n\in\mathbb{N}}A_n$$$. Ce qui prouve la densité de notre ensemble.
+Autrement dit, y est dans $$B(x,\varepsilon)\cap \displaystyle\bigcap_{n\in\mathbb{N}}A_n$$. Ce qui prouve la densité de notre ensemble.
 
 
 ##### Point n°1
 
 Supposons que A soit un espace localement compact. Autrement dit, à tout point, on peut définir un voisinage compact. 
 
-Remarquons premièrement un résultat intéressant. Soit K un compact, soit $X\subset A$$$ un fermé. $X\cap K$$$ est un compact ou est vide. 
+Remarquons premièrement un résultat intéressant. Soit K un compact, soit $$X\subset A$$ un fermé. $$X\cap K$$ est un compact ou est vide. 
 
-Simplement, si l'intersection n'est pas vide les éléments de l'intersection sont bornés. Par intersection, on a que l'intersection est fermée. $X\cap K$$$ est une partie fermée, bornée dans un compact K, donc $X\cap K$$$ est un compact.
+Simplement, si l'intersection n'est pas vide les éléments de l'intersection sont bornés. Par intersection, on a que l'intersection est fermée. $$X\cap K$$ est une partie fermée, bornée dans un compact K, donc $$X\cap K$$ est un compact.
 
-En reprenant les notations précédentes, on peut alors définir à chaque fois, une suite de compact $(K_n)$ décroissante telle que le diamètre décroit vers 0.
+En reprenant les notations précédentes, on peut alors définir à chaque fois, une suite de compact $$(K_n)$$ décroissante telle que le diamètre décroit vers 0.
 $$\delta (K_n) = min_{x,y\in K_n} d(x,y)$$
 
-Soit x dans A, il existe un voisinage $B(x,\varepsilon)$. On définit une boule $B_0$$$ fermée incluse dans $A_0\cap B(x,\varepsilon)$$$. On peut ensuite définir le compact K voisinage de x. Et donc $K_0 = B_0\cap K$$$ est un compact.
+Soit x dans A, il existe un voisinage $$B(x,\varepsilon)$$. On définit une boule $$B_0$$ fermée incluse dans $$A_0\cap B(x,\varepsilon)$$. On peut ensuite définir le compact K voisinage de x. Et donc $$K_0 = B_0\cap K$$ est un compact.
 
-Ensuite, il existe une boule fermée incluse dans $A_1\cap K_0$. On peut définir son rayon aussi petit qu'on souhaite, par exemple $r_1 = \dfrac{1}{2}\delta{K_0}$$$.
-On peut poser K le voisinage compact de $x_1$$$. Et finalement, poser $K_1 = B_1\cap K$$$
+Ensuite, il existe une boule fermée incluse dans $$A_1\cap K_0$$. On peut définir son rayon aussi petit qu'on souhaite, par exemple $$r_1 = \dfrac{1}{2}\delta{K_0}$$.
+On peut poser K le voisinage compact de $$x_1$$. Et finalement, poser $$K_1 = B_1\cap K$$
 
-On imagine ensuite le processus (similaire au point 1) pour obtenir une suite de compacts $(K_n)$$$ imbriqués...
+On imagine ensuite le processus (similaire au point 1) pour obtenir une suite de compacts $$(K_n)$$ imbriqués...
 
-$\forall n\in\mathbb{N}, x_n\in K_n \subset K_0$$$. Autrement dit, $(x_n)$$$ est une suite dans un compact.
-Elle admet alors une valeur d'adhérence y. On note $x_{\varphi(n)}$$$ sa suite extraite. 
+$$\forall n\in\mathbb{N}, x_n\in K_n \subset K_0$$. Autrement dit, $$(x_n)$$ est une suite dans un compact.
+Elle admet alors une valeur d'adhérence y. On note $$x_{\varphi(n)}$$ sa suite extraite. 
 
-On sait que si $n\ge p, x_n \in K_n\subset K_p$$$. Donc, $\forall n\in\mathbb{N}, x_{\varphi(n + p)}\in K_p$$$. 
+On sait que si $$n\ge p, x_n \in K_n\subset K_p$$. Donc, $$\forall n\in\mathbb{N}, x_{\varphi(n + p)}\in K_p$$. 
 
-Or $x_{\varphi(n + p)}$$$ tend vers y (c'est une suite extraite de $x_{\varphi(n)}$$$ et est dans le compact $K_p$$$ donc y est dans $K_p$$$.
+Or $$x_{\varphi(n + p)}$$ tend vers y (c'est une suite extraite de $$x_{\varphi(n)}$$ et est dans le compact $$K_p$$ donc y est dans $$K_p$$.
 
 On a que $$\bigcap_{n\in\mathbb{N}}K_n \subset \bigcap_{n\in\mathbb{N}}A_n$$
 
-A fortiori, y appartient l'union ainsi qu'au voisinage de x donc $y \in B(x,\varepsilon) \cap \bigcap_{n\in\mathbb{N}}A_n$$$ 
-Donc $\bigcap_{n\in\mathbb{N}}A_n$$$ est une partie dense de A.
+A fortiori, y appartient l'union ainsi qu'au voisinage de x donc $$y \in B(x,\varepsilon) \cap \bigcap_{n\in\mathbb{N}}A_n$$ 
+Donc $$\bigcap_{n\in\mathbb{N}}A_n$$ est une partie dense de A.
 
 
 ##### Point n°3
 Soit A un espace de Baire. Soit un X ouvert de A. Montrons que X est un espace de baire pour la topologie induite sur X.
 
-Soit $(X_n)_n$$$ des ouverts de X denses dans X. On peut poser $A_i$$$ une partie dense de A telle que $X_i = A_i\cap X$$$. 
+Soit $$(X_n)_n$$ des ouverts de X denses dans X. On peut poser $$A_i$$ une partie dense de A telle que $$X_i = A_i\cap X$$. 
 
-Explicitement, on pose $O_i = A\setminus \overline{X_i}$$$.
-On pose $A_i = O_i \cup X_i$$$. On obtient bien une partie ouverte dans A, la densité étant assez triviale.
+Explicitement, on pose $$O_i = A\setminus \overline{X_i}$$.
+On pose $$A_i = O_i \cup X_i$$. On obtient bien une partie ouverte dans A, la densité étant assez triviale.
 
 On a alors
 $$\bigcap_{n}X_n = \bigcap_{n}A_n\cap X = X\cap\bigcap_{n}A_n$$
 
-D'après notre hypothèse, A est de Baire donc $\displaystyle\bigcap_{n}A_n$$$ est une partie dense de A. Et donc, cela permet de définir une partie dense dans X.
+D'après notre hypothèse, A est de Baire donc $$\displaystyle\bigcap_{n}A_n$$ est une partie dense de A. Et donc, cela permet de définir une partie dense dans X.
 
 
 #### Applications diverses
 
 ##### Un espace vectoriel normé complet de dimension infinie n'admet pas de base dénombrable
 
-Posons $(E,||.||)$$$ un espace vectoriel normé complet de dimension infinie. On dit que $(e_n)_{n\in\mathbb{N}}$$$ est une base de E si et seulement si, il existe pour chaque x dans E une partie **finie** de $\mathbb{N}$$$ I telle que :
+Posons $$(E,||.||)$$ un espace vectoriel normé complet de dimension infinie. On dit que $$(e_n)_{n\in\mathbb{N}}$$ est une base de E si et seulement si, il existe pour chaque x dans E une partie **finie** de $$\mathbb{N}$$ I telle que :
 $$\exists ! (\lambda_i)_{i\in I}, x = \sum_{i\in I}\lambda_i e_i$$
 
-Supposons qu'il en existe une base $(e_n)$$$ pour notre espace E. Il est de fait métrique complet, et donc de Baire d'après le théorème qu'on a vu.
+Supposons qu'il en existe une base $$(e_n)$$ pour notre espace E. Il est de fait métrique complet, et donc de Baire d'après le théorème qu'on a vu.
 
-On note $F_N = vect(e_0,...,e_N)$$$. Les $(F_N)$$$ sont des sous-espaces stricts de E. Or, un sev strict est d'intérieur vide. Ils sont, par ailleurs, de dimensions finies donc fermés.
+On note $$F_N = vect(e_0,...,e_N)$$. Les $$(F_N)$$ sont des sous-espaces stricts de E. Or, un sev strict est d'intérieur vide. Ils sont, par ailleurs, de dimensions finies donc fermés.
 
 On remarque que notre espace est alors la réunion de ces fermés.
 $$E = \bigcup_{N\in\mathbb{N}}F_N$$
 
-En effet, si x est dans E. Il existe une partie J de $\mathbb{N}$$$ qui permet d'exprimer x en combinaison linéaire. On pose $N = max(J)$$$. Et on remarque que x est dans $F_N$$$.
+En effet, si x est dans E. Il existe une partie J de $$\mathbb{N}$$ qui permet d'exprimer x en combinaison linéaire. On pose $$N = max(J)$$. Et on remarque que x est dans $$F_N$$.
 L'autre inclusion est évidente.
 
 On montre alors E est également d'intérieur vide (cf. propriété équivalente d'un espace de Baire) car E est de Baire. On voit directement la contradiction. L'intérieur de E dans E est... E, qui n'est pas vide.
