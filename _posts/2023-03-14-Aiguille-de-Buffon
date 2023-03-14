@@ -1,0 +1,9 @@
+---
+---
+C'est le $$\pi Day$$, c'est l'occasion de présenter un résultat -parmi d'autres- sur $$\pi$$. 
+
+**Aiguille de Buffon** :
+
+Soit une feuille lignée, d'espace constant d. On y lâche une aiguille de longueur $$l$$, on aimerait connaître la probabilité que cette aiguille coupe une des lignes.
+
+On observera que l'étude de ce problème dépendra de la taille de nos aiguilles. On dira qu'une aiguille est **longue** si elle est plus grande que d, et qu'elle est **courte** si elle est inférieure ou égale à d.
