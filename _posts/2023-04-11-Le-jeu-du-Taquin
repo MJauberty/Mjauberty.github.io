@@ -1,0 +1,18 @@
+---
+---
+Des mathématiques autour du jeu du taquin
+
+<p>Grâce à notre cher Telo de la LH, nous pouvons nous amuser avec ce qu'on appelle un "taquin", ou encore un <i>Rubik's Square</i>. On sent assez bien les mathématiques qu'on peut trouver derrière. L'objectif de ce petit article est juste de vous faire un petit rappel de la notion de groupe symétrique à travers un jeu. Nous chercherons aussi à déterminer les grilles non-résolubles de taquin</p>
+
+<p>Très bien, attaquons, le formalisme qui sera très rapide. On est d'accord pour dire que le problème est indépendant de l'image choisie et qu'on peut se restreindre à un taquin de nombres, allant de 1 à 16. Soit on considérera que notre image est bien rangée quand les nombres se succèderont naturellement. 1,2, ..., 16.</p>
+
+<p>Ainsi défini, notre problème du taquin est un mélange de notre suite de nombre, on parle de permuation. Formellement, les permutations sont les applications bijectives de l'ensemble dans lui-même. Plus simplement, on fait un mélange. On notera $$\sigma$$ une permutation en général.</p>
+
+<p>Première remarque intéressante, si on prend deux permutations, les enchaîner nous donne une nouvelle permutation. Par exemple, je prends la permutation qui échange le 1 et 2, puis celle qui échange le 2 et 3. J'obtiens la permutation qui échange le 1 avec 2, le 2 avec 3 et le 3 avec 1. </p>
+
+<p>A jouer avec tous ces mélanges de nombres, on aimerait savoir si on s'éloigne ou si on se rapproche de notre solution (1,...,16). Pour cela, nous allons compter le nombre de fois où on a $$\sigma(i)>\sigma(j)$$ et $$i<j$$. On bouleverse l ordre de notre suite de nombre.</p>
+
+<p>Essayons par intuition d'obtenir un résultat en comptant le nombre d'inversion. Prenons une grille aléatoire de taquin. On peut déjà se mettre d'accord qu'un déplacement horizontal n'apportera aucune inversion supplémentaire. En effet, il y a toujours les mêmes éléments avant et après.<\p>
+ 
+ <p>Que se passe-t-il si on bouge verticalement ? Par exemple, si on échange avec le 3. L'idée, c'est de regarder parmi les ordres perturbés ce qu'il se passe. Le 3 créait une inversion jusqu'à la position de 16, en position 2. 16 dans cette position crée 4 inversions, 3 inversions en plus. Si on regarde pour la position 6: il n'y avait aucune inversion depuis la position 2. Avec 3 dans la position 6, il y 3 inversions (16,5,8). Donc au total, cette permutation nous a fait gagner 6 de désordre.
+  
