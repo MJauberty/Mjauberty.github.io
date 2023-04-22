@@ -11,7 +11,7 @@ On note par coutume du domaine $$\chi$$ ("chi" prononcé "ki") l'alphabet, l'ens
 Sans vous choquer, je pense affirmer :
 $$|\chi| = 26$$
 
-Si je distibuais aléatoirement mes lettres, on utiliserait pour formaliser une loi uniforme sur $$\llbracket1,26\rrbracket$$.
+Si je distibuais aléatoirement mes lettres, on utiliserait pour formaliser une loi uniforme sur $$|[1,26]|$$.
 Du côté récepteur, on s'attend à recevoir un "e" une fois sur 26.
 
 On pourrait aussi respecter les [fréquences "usuelles"](https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27apparition_des_lettres#Base_statistique_de_calcul_:_la_hit_clair) des lettres. On observe davantage de "e" que de "z" en français par exemple.
