@@ -79,7 +79,7 @@ $$H(X) = -\sum_{k=1}^np_i\log_2(p_i)$$
 
 On note que ce cas s'étend à de nombreux contextes. On définit alors l'entropie (de Shannon) par la formule suivante.
 
-$$H(X) = \sum_{x\in\chi}P(X = x)\log_2(P(X=x))$$
+$$H(X) = -\sum_{x\in\chi}P(X = x)\log_2(P(X=x))$$
 
 On pourra vérifier les différentes propriétés de l'entropie avec cette formule.
 
