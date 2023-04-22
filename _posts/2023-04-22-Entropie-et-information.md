@@ -70,6 +70,7 @@ Par ailleurs, pour déterminer la lettre reçue, on sait qu'il faut $$\log_2(26)
 
 On a :
 $$\log_2(26) = H(X) + p_1\log_2(20) +p_2\log_2(6)$$
+
 $$H(X) = -(p_1\log_2(p_1) + p_2\log_2(p_2))$$
 
 Plus généralement, si on un alphabet $$\chi$$. Si on peut diviser en n catégorie notre alphabet, en notant X la variable qui permet de définir la catégorie.
