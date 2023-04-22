@@ -41,7 +41,7 @@ Cela vaut aussi physiquement. L'entropie d'un gaz est supérieure à l'entropie 
 
 ![Texte alternatif](3_pc_01i01z.jpg "gaz_solide").
 
-L'entropie d'information est sensiblement semblable. En fait, si on faisait les mathématiques derrière la thermodynamique, on pourrait montrer que plus ou moins la même notion à un facteur près.
+L'entropie d'information est sensiblement semblable. En fait, si on faisait les mathématiques derrière la thermodynamique, on pourrait montrer que c'est plus ou moins la même notion à un facteur près.
 
 C'est Claude Shannon (le même du théorème sur l'échantillonnage) qui a le premier défini cette notion en mathématiques. Supposons pour simplifier un peu notre formalisation que l'on possède cette fonction d'entropie H, qui prend en argument des variables aléatoires (qui modélisent nos informations). H sera d'autant plus grand que l'information sera surprenante et chaotique.
 
@@ -51,7 +51,7 @@ Essayons d'avoir une première relation qui devrait être vérifiée par notre e
 
 $$H(X,Y) = H(X) + H(Y)$$
 
-Une formule assez intuitive, admettons que nos informations soient indépendantes. Une fois que j'ai répondu aux questions pour déterminer l'information de X, je n'ai aucun indice sur l'information de Y donc je dois lui poser ses questions. Au total, j'ai en moyenne H(X) + H(Y).
+Une formule assez intuitive, admettons que nos informations soient indépendantes. Une fois que j'ai répondu aux questions pour déterminer l'information de X, je n'ai aucun indice sur l'information de Y donc je dois poser des questions. Au total, j'ai en moyenne H(X) + H(Y).
 
 Prenons un alphabet simple $$\chi = \{a,b,c,d\}$$, avec une distribution uniforme. Je veux déterminer la lettre reçue, et je pose donc des questions pour déterminer l'information. En fonctionnant par dichotomie, on détermine de manière certaine l'information en 2 questions. En procédant de la même manière pour un alphabet de 26 lettres, on obtient $$H(X) = \log_2(26)$$
 
