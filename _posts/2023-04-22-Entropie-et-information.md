@@ -65,7 +65,7 @@ Notre entropie semble totalement liée à la notion de logarithme. Premièrement
 
 Supposons que l'on veuille déterminer une information précise. Par exemple, je vous envoie des lettres de l'alphabet latin et vous voulez déterminer si c'est une consonne ou une voyelle. Il y a 6 voyelles, 20 consonnes. Notons respectivement $$p_1,p_2$$ les probabilités qu'un symbole soit une consonne et qu'un symbole soit une voyelle. Si on veut déterminer l'information en sachant que c'est une voyelle, il faut $$\log_2(6)$$. Si on sait que c'est une consonne, $$\log_2(20)$$.
 
-Pour déterminer le symbole, il faut d'abord déterminer si une voyelle ou une consonne (avec H(X) information) puis déterminer le symbole en connaissant sa catégorie.
+Pour déterminer le symbole, il faut d'abord déterminer si c'est une voyelle ou une consonne (avec H(X) information) puis déterminer le symbole en connaissant sa catégorie.
 Par ailleurs, pour déterminer la lettre reçue, on sait qu'il faut $$\log_2(26)$$ information.
 
 On a :
@@ -73,7 +73,7 @@ $$\log_2(26) = H(X) + p_1\log_2(20) +p_2\log_2(6)$$
 
 $$H(X) = -(p_1\log_2(p_1) + p_2\log_2(p_2))$$
 
-Plus généralement, si on un alphabet $$\chi$$. Si on peut diviser en n catégorie notre alphabet, en notant X la variable qui permet de définir la catégorie.
+Plus généralement, si on a un alphabet $$\chi$$. On peut diviser en n catégories notre alphabet, en notant X la variable qui permet de définir la catégorie.
 
 $$H(X) = -\sum_{k=1}^np_i\log_2(p_i)$$
 
