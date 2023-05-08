@@ -16,3 +16,6 @@ En classe, vous avez peut-être vu que les mathématiciens arrêtaient de noter 
 Les physiciens préfèrent la garder. En "ket", ils vont noter $$|x>$$. Et, enfin, ils vont noter le vecteur transposé "bra" $$<x|$$. Pourquoi ? Vous allez voir.
 
 $$\text{Bra-Ket:     } <x|y>  \text{     est le produit scalaire}$$
+
+Cette notation a de nombreux avantages calculatoires. On peut traduit en "bra-ket" la projection par rapport à un vecteur.
+$$\Pi_y = |y><y|$$
