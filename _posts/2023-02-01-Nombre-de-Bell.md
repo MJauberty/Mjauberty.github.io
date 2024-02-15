@@ -1,3 +1,5 @@
+---
+---
 # Nombre de Bell
 
 Les nombres de Bell constituent l'une des suites importantes dans le domaine du dénombrement. *Qu'est-ce que compte le nombre de Bell ?* Considérons \(n\) élèves dans une classe. Imaginons que nous les numérotions (par exemple, par ordre alphabétique des prénoms et des noms) et que nous souhaitions les organiser d'une certaine manière. Par exemple, nous pourrions décider de définir des classements ou des ordres parmi tous les élèves. Cela revient alors à sélectionner un arrangement parmi \(n\) numéros. Il est facile de voir qu'il y a \(n!\) façons de classer nos élèves. Mais imaginons maintenant que nous voulions les regrouper. Combien de façons différentes pouvons-nous imaginer pour les organiser en groupes ? C'est ce que compte un nombre de Bell !
