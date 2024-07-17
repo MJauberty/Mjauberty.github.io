@@ -1,8 +1,0 @@
----
----
-## Actions de groupe et formule de Burnside
-  Dans cet article, je vous propose d'étudier un outil puissant de l'algèbre : l'action de groupe. Avant de rentrer dans des considérations purement
-  mathématiques, essayons de poser nos motivations. La théorie des groupes offrent des développements particulièrement élégants, ne serait-ce que
-  pour les approches théoriques qu'elle apporte sur les notions de symétries ou de rotations. Mais justement, en quoi cela a-t-il du sens ?
-  Quand on étudie, par exemple, un cube, il ne s'agit formellement pas d'un cube. En d'autres termes, ce que je décrivais jusque-là
-  était une opération que l'on peut ensuite appliquer à un cube. 
