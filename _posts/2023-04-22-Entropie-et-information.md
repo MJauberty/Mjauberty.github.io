@@ -39,7 +39,7 @@ On remarque alors que la modélisation probabiliste dépend autant de l'envoi qu
 La notion d'entropie n'est pas totalement obscure à l'élève de classe prépa tant elle est fondamentale en thermodynamique. Une première approche de l'entropie est de dire qu'elle est une fonction croissante du désordre.
 Cela vaut aussi physiquement. L'entropie d'un gaz est supérieure à l'entropie d'un solide, le premier est désordonné et le second est ordonné.
 
-![Texte alternatif](3_pc_01i01z.jpg "gaz_solide").
+![Texte alternatif](3_pc_01i01z.jpg).
 
 L'entropie d'information est sensiblement semblable. En fait, si on faisait les mathématiques derrière la thermodynamique, on pourrait montrer que c'est plus ou moins la même notion à un facteur près.
 
